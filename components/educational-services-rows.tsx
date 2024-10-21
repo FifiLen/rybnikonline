@@ -2,13 +2,7 @@
 
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import {
-  ChevronLeft,
-  ChevronRight,
-  Phone,
-  MessageCircle,
-  ChevronDown,
-} from "lucide-react";
+import { ChevronLeft, ChevronRight, ChevronDown } from "lucide-react";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import Image from "next/image";

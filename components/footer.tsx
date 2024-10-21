@@ -1,6 +1,5 @@
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
-import { Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
 import Link from "next/link";
 import Markdown from "markdown-to-jsx";
 
