@@ -1,0 +1,19 @@
+.cardWithShadow {
+  position: relative;
+}
+
+.cardWithShadow::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 10%;
+  right: 10%;
+  height: 10px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 99, 245, 0.766),
+    transparent
+  );
+  filter: blur(10px);
+  border-radius: 50%;
+}
