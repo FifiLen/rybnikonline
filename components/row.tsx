@@ -71,27 +71,20 @@ export const services = [
 function Carousel({ items }: { items: (typeof services)[0]["items"] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carouselRef = useRef<HTMLDivElement>(null);
-  const [currentGradient, setCurrentGradient] = useState(
-    items[0].gradientColors
-  );
 
   const handleNext = () => {
     if (currentIndex < items.length - 1) {
       setCurrentIndex((prev) => prev + 1);
-      setCurrentGradient(items[currentIndex + 1].gradientColors);
     }
   };
 
   const handlePrev = () => {
     if (currentIndex > 0) {
       setCurrentIndex((prev) => prev - 1);
-      setCurrentGradient(items[currentIndex - 1].gradientColors);
     }
   };
 
-  useEffect(() => {
-    setCurrentGradient(items[currentIndex].gradientColors);
-  }, [currentIndex, items]);
+  useEffect(() => {}, [currentIndex, items]);
 
   return (
     <div className="relative -mr-[25vw]" ref={carouselRef}>

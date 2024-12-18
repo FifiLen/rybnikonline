@@ -1,8 +1,5 @@
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
 import Link from "next/link";
 import Markdown from "markdown-to-jsx";
-import { div } from "framer-motion/client";
 
 const footerLinks = [
   {
